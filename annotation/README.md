@@ -17,3 +17,5 @@ To create annotation:
     
 Create 2 training files, one having annotations of voids and the other not having voids.
 Classes are **'0'** for **voids** and **'1'** for **not voids**
+
+**parsing_xml.py** converts the xml file obtained from imglab to suitable annotation file required by the model.
