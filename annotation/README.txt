@@ -16,4 +16,4 @@ To create annotation:
 *In case of any issues use, ./imglab -h ( It shows the options ) or Help in the application opened*
     
 Create 2 training files, one having annotations of voids and the other not having voids.
-Classes are **'0'** for **voids** and **'1'** **not voids**
+Classes are **'0'** for **voids** and **'1'** for **not voids**
