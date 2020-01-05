@@ -14,7 +14,6 @@ Preparing the data to be fed to the model.
         a. It contains the the width and height of the bounding boxes for the set of images.<br/>
         b. The appropriate bounding box is selected as the bounding box with highest IOU between the ground truth box and anchor box. <br/>
         c. This file can be obtained by using simple K-means clustering and it stores the dimensions of the bounding boxes in the ‘yolo_anchors.txt’ file.<br/>
-        
         ![Predicted anchor boxes by k-means](https://miro.medium.com/max/1159/1*8OAPNpqI92FM9S9lWH8AkA.png)
         
 4. **.names file** -- Containing the labels of the objects.
