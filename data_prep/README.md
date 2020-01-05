@@ -7,6 +7,8 @@ Preparing the data to be fed to the model.
 3. **Anchors file** -- A file which tells set of bounding boxes it should start off while training.
         It contains the the width and height of the bounding boxes for the set of images.
         This file can be obtained by training the using simple K-means classifier and it stores the dimensions of the bounding boxes in the ‘yolo_anchors.txt’ file which has the very less IoU (Intersection over union) scores.
+        ![Predicted anchor boxes by k-means](https://miro.medium.com/max/1159/1*8OAPNpqI92FM9S9lWH8AkA.png)
+        
 4. **.names file** -- Containing the labels of the objects.
 
 
