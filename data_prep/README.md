@@ -21,8 +21,8 @@ Preparing the data to be fed to the model.
 
 **To-be done**<br/>
 The images and annotations are created in the annotations folder<br/>
-For generating the ***"anchors.txt"**** file, run the **kmeans.py** file.<br/>
-For the ****.names file***, create a simple text file. Add each label in a new line and save it with ***.names*** extension<br/>
+For generating the ***"anchors.txt"*** file, run the **kmeans.py** file.<br/>
+For the ***.names file***, create a simple text file. Add each label in a new line and save it with ***.names*** extension<br/>
 
 -----------------------------------------------------------------------------------------------------------------------------
 
