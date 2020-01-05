@@ -19,14 +19,14 @@ Preparing the data to be fed to the model.
 4. **.names file** -- Containing the labels of the objects.
 
 
-**To-be done**
-The images and annotations are created in the annotations folder
-For generating the ***"anchors.txt"**** file, run the **kmeans.py** file.
-For the ****.names file***, create a simple text file. Add each label in a new line and save it with ***.names*** extension
+**To-be done**<br/>
+The images and annotations are created in the annotations folder<br/>
+For generating the ***"anchors.txt"**** file, run the **kmeans.py** file.<br/>
+For the ****.names file***, create a simple text file. Add each label in a new line and save it with ***.names*** extension<br/>
 
--------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
 
-Preparing the keras model.
+Preparing the keras model.<br/>
 
 Run the **convert.py** to obtain the keras model. Change the location of the .cfg ( configuration file ) and .weights file
 
