@@ -11,9 +11,9 @@ Preparing the data to be fed to the model.
         1. The location of the image so that the annotations don’t get mixed up
         2. The coordinates of the bounding boxes.
 3. **Anchors file** -- A file which contains initial set of bounding boxes to start off while training.
-        It contains the the width and height of the bounding boxes for the set of images.
-        This file can be obtained by training the using simple K-means classifier and it stores the dimensions of the bounding boxes in the ‘yolo_anchors.txt’ file 
-        The appropriate bounding box is selected as the bounding box with highest IOU between the ground truth box and anchor box. 
+        a. It contains the the width and height of the bounding boxes for the set of images.
+        b. This file can be obtained by training the using simple K-means clustering and it stores the dimensions of the bounding boxes in the ‘yolo_anchors.txt’ file.
+        c. The appropriate bounding box is selected as the bounding box with highest IOU between the ground truth box and anchor box. 
         ![Predicted anchor boxes by k-means](https://miro.medium.com/max/1159/1*8OAPNpqI92FM9S9lWH8AkA.png)
         
 4. **.names file** -- Containing the labels of the objects.
