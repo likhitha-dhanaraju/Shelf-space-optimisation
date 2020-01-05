@@ -1,4 +1,4 @@
-**Pre-training*
+**Pre-training**
 
 1. Preparing the data
 2. Preparing the pre-trained model
