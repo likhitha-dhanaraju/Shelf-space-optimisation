@@ -25,7 +25,27 @@ input_path: “/home/likhitha/*project-folder*/val.record”</br>
 label_map_path: “/home/likhitha/*project-folder*/training/labelmap.pbtxt”</br>
 
 
-***Run the train.py file in the command line with the following arguments*** </br>
+***To train the model ***
+
+*Run the ***train.py*** progeam in the command line with the following arguments*</br>
 
 *python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/fater_rcnn_inception_v2_coco.config*  </br>
+
+***To save the inference graph *** 
+
+*Run the ***export_inference_graph.py*** *program in the command line with the following arguments* </br>
+
+*python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/faster_rcnn_inception_v2_coco.config --trained_checkpoint_prefix training/model.ckpt-xxx --output_directory directory_name*  </br>
+
+*xxx is the checkpoint number* </br>
+
+
+***To run inference on the test images*** </br>
+
+*Run the ***testing_frcnn.py*** *program after changing the following arguments </br>
+
+1. Path to the inference folder (directory_name mentioned while running the export_inference_graph ) </br>
+2. Path to the labelmap.pbtxt</br>
+3. Path to the test images folder</br>
+4. Path to the result images folder</br>
 
