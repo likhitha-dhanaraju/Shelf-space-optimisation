@@ -5,8 +5,8 @@
 Run the following command in the commandline.</br>
 
 Change the following: </br>
-1. source - *Path to the inference graph obtained* for both void detector and label detector </br>
-2. Make a config file with the follwing contents and add the path accordingly</br> a
+1. source - *Path to the inference graph obtained* for both void detector and label detector* </br>
+2. Make a config file with the follwing contents and add the path accordingly </br> 
 
 *
 model_config_list: {</br>
