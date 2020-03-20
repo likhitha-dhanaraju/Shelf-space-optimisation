@@ -12,7 +12,7 @@ It is a shell script file. Link to the repository [dlib repository](https://gith
 
 *Make sure to install it according to the instructions mentioned in the GitHub ReadME of the dlib repository*
 
-To create annotation:
+To create annotation:<br/>
   In folder ../dlib/tools/imglab/build run the following commands:
     1. ./imglab -c filename.xml path_to_the_resized_data_folder<br/>
     2. ./imglab filename.xml  <br/>
