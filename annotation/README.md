@@ -3,7 +3,8 @@ To pre-process the data to feed it for training.
 
 Step 1: *Resizing the training images* - **resizedata.py** uses OpenCV. The resulting images are unrotated and resized.When PIL is used to resize the images, the resulting images are rotated by 90 degree. <br/>
 
-The resized images size is kept to be (416,416)
+The resized images size is kept to be (416,416)<br/>
+
 *Change the original data path and the resized images data path accordingly.*
 
 Step 2: Start annotation using imglab
