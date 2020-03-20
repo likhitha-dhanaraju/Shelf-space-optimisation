@@ -27,6 +27,10 @@ Classes are **'0'** for **voids** and **'1'** for **not voids**
 
 *Keep the ratio of number of voids to number of non-voids to 3;1 for best results*<br/>
 
-Step 3: **pre-processing.py** - Pre-processing the data to generate tensorflow record files to feed it for training.<br/>
-*Change the path of the resized images path, the file name of the xml files and Class_mapping accordingly.*
+Step 3: **pre-processing.py** - Pre-processing the data to generate csv files of the iamges with the bounding box co-ordinates as well as the class names files to feed it for training.<br/>
+*Change the path of the resized images path, the file name of the xml files and Class_mapping accordingly.* </br>
+
+Step 4: **generate_tfrecord.py** - To generate the tf record training and validation files to feed it to the model </br>
+*Change the path of the respective image folder, name of the record file and the csv input filename*
+
 
