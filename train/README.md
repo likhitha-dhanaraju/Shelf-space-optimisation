@@ -48,4 +48,5 @@ label_map_path: “/home/likhitha/*project-folder*/training/labelmap.pbtxt”</b
 2. Path to the labelmap.pbtxt</br>
 3. Path to the test images folder</br>
 4. Path to the result images folder</br>
+5. Number of classes </br>
 
