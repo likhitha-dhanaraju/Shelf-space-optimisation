@@ -41,11 +41,11 @@ model_config_list: {</br>
 *
 
 Change the name to the target name given, and mention the base_path without the '0001' </br>
-=================================================================================================================
+----------------------------------------------------------------------------------------------------------------
 If successfully hosted you will see the following output:</br>
 [evhttp_server.cc : 238] NET_LOG: Entering the event loop ...
 2020-03-23 15:06:45.396900: I tensorflow_serving/model_servers/server.cc:378] Exporting HTTP/REST API at:localhost:8501 ...
-=================================================================================================================
+----------------------------------------------------------------------------------------------------------------
 
 ***Program to run from the client side***
 **client_request.py*** </br>
