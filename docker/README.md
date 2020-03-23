@@ -1,4 +1,6 @@
-# **Installing docker and tensorflow/serving**
+# Running the models on a server with docker
+
+### **Installing docker and tensorflow/serving**
 1. Install docker according to the instructions in the official docker website [Docker installation](https://docs.docker.com/install/) </br>
 2. Run the command to ***docker pull tensorflow/serving*** in the command line  </br>
 
