@@ -48,9 +48,9 @@ If successfully hosted you will see the following output:
 [evhttp_server.cc : 238] NET_LOG: Entering the event loop ...
 2020-03-23 15:06:45.396900: I tensorflow_serving/model_servers/server.cc:378] Exporting HTTP/REST API at:localhost:8501 ...
 ```
-### ***Program to run from the client side***
+### **Program to run from the client side**
 **client_request.py*** </br>
 
 Make sure to keep the file **visualization_utils.py** in the same folder as the **client_request.py*** program.</br>
 
-Change the paths of the resized_test_data, original test data, destination path for the inference labels as well as the category indices.</br>
+Change the ip address of the server, paths of the resized_test_data, original test data, destination path for the inference labels as well as the category indices.</br>
