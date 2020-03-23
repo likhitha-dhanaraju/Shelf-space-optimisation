@@ -12,9 +12,9 @@ Download the folders from the drive link and save it in your project folder
 Run the following command in the commandline to host as a server</br>
 
 EXAMPLE:</br>
-*sudo docker run -p 8500:8500 -p 8501:8501   --mount type=bind,source=/home/likhitha/Documents/Projects/object-detection/DetectionModel/1,target=/models/detection_model/0001   --mount type=bind,source=/home/likhitha/Documents/Projects/object-detection/LabelDetector/1,target=/models/label_detector/0001  --mount type=bind,source=/home/likhitha/Documents/Projects/object-detection/config.conf,target=/models/config.conf   -t tensorflow/serving --model_config_file=/models/config.conf* </br>
-
-
+```
+sudo docker run -p 8500:8500 -p 8501:8501   --mount type=bind,source=/home/likhitha/Documents/Projects/object-detection/DetectionModel/1,target=/models/detection_model/0001   --mount type=bind,source=/home/likhitha/Documents/Projects/object-detection/LabelDetector/1,target=/models/label_detector/0001  --mount type=bind,source=/home/likhitha/Documents/Projects/object-detection/config.conf,target=/models/config.conf   -t tensorflow/serving --model_config_file=/models/config.conf </br>
+```
 **Change the following:** </br>
 1. source - *Path to the folders downloaded from drive* for both void detector and label detector </br>
 2. Make a config file with the follwing contents and add the path accordingly </br> 
