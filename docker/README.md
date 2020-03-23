@@ -13,7 +13,7 @@ Run the following command in the commandline to host as a server</br>
 
 EXAMPLE:</br>
 ```
-sudo docker run -p 8500:8500 -p 8501:8501   --mount type=bind,source=/home/likhitha/Documents/Projects/object-detection/DetectionModel/1,target=/models/detection_model/0001   --mount type=bind,source=/home/likhitha/Documents/Projects/object-detection/LabelDetector/1,target=/models/label_detector/0001  --mount type=bind,source=/home/likhitha/Documents/Projects/object-detection/config.conf,target=/models/config.conf   -t tensorflow/serving --model_config_file=/models/config.conf </br>
+sudo docker run -p 8500:8500 -p 8501:8501   --mount type=bind,source=/home/likhitha/Documents/Projects/object-detection/DetectionModel/1,target=/models/detection_model/0001   --mount type=bind,source=/home/likhitha/Documents/Projects/object-detection/LabelDetector/1,target=/models/label_detector/0001  --mount type=bind,source=/home/likhitha/Documents/Projects/object-detection/config.conf,target=/models/config.conf   -t tensorflow/serving --model_config_file=/models/config.conf
 ```
 **Change the following:** </br>
 1. source - *Path to the folders downloaded from drive* for both void detector and label detector </br>
@@ -42,7 +42,7 @@ model_config_list: {
 
 Change the name to the target name given, and mention the base_path without the '0001' </br>
 ```
-If successfully hosted you will see the following output:</br>
+If successfully hosted you will see the following output:
 [evhttp_server.cc : 238] NET_LOG: Entering the event loop ...
 2020-03-23 15:06:45.396900: I tensorflow_serving/model_servers/server.cc:378] Exporting HTTP/REST API at:localhost:8501 ...
 ```
