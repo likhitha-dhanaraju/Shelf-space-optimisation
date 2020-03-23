@@ -20,24 +20,24 @@ EXAMPLE:</br>
 2. Make a config file with the follwing contents and add the path accordingly </br> 
 
 ```
-model_config_list: {</br>
-  config: {</br>
-    name:  "detection_model",</br>
-    base_path:  "/models/detection_model",</br>
-    model_platform: "tensorflow",</br>
-    model_version_policy: {</br>
-        all: {}</br>
-    }</br>
-  },</br>
-  config: {</br>
-    name:  "label_detector",</br>
-    base_path:  "/models/label_detector",</br>
-    model_platform: "tensorflow",</br>
-    model_version_policy: {</br>
-        all: {}</br>
-    }</br>
-  }</br>
-}</br>
+model_config_list: {
+  config: {
+    name:  "detection_model",
+    base_path:  "/models/detection_model",
+    model_platform: "tensorflow",
+    model_version_policy: {
+        all: {}
+    }
+  },
+  config: {
+    name:  "label_detector",
+    base_path:  "/models/label_detector",
+    model_platform: "tensorflow",
+    model_version_policy: {
+        all: {}
+    }
+  }
+}
 ```
 
 Change the name to the target name given, and mention the base_path without the '0001' </br>
