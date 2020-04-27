@@ -15,7 +15,17 @@ Run the following command in the commandline to host as a server</br>
 
 EXAMPLE:</br>
 ```
-sudo docker run -p 8500:8500 -p 8501:8501   --mount type=bind,source=/home/likhitha/Documents/Projects/object-detection/DetectionModel/1,target=/models/detection_model/0001   --mount type=bind,source=/home/likhitha/Documents/Projects/object-detection/LabelDetector/1,target=/models/label_detector/0001  --mount type=bind,source=/home/likhitha/Documents/Projects/object-detection/config.conf,target=/models/config.conf   -t tensorflow/serving --model_config_file=/models/config.conf
+sudo docker run -p 8500:8500 -p 8501:8501   --mount type=bind,source=/home/likhitha/Documents/Projects/Dumla/flask/DetectionModel/1,target=/models/detection_model/0001   --mount type=bind,source=/home/likhitha/Documents/Projects/Dumla/flask/LabelDetector/1,target=/models/label_detector/0001  --mount type=bind,source=/home/likhitha/Documents/Projects/Dumla/flask/config.conf,target=/models/config.conf   -t tensorflow/serving --model_config_file=/models/config.conf
+```
+
+To run it in a Raspberry Pi:
+```
+sudo docker pull emacski/tensorflow-serving:2.1.0-linux_arm_armv7-a_neon_vfpv3
+```
+
+```
+sudo docker run -p 8500:8500 -p 8501:8501   --mount type=bind,source=/mnt/usb/flask/DetectionModel/1,target=/models/detection_model/0001   --mount type=bind,source=/mnt/usb/flask/LabelDetector/1,target=/models/label_detector/0001  --mount type=bind,source=/mnt/usb/flask/config.conf,target=/models/config.conf   -t emacski/tensorflow-serving:2.1.0-linux_arm_armv7-a_neon_vfpv3 --model_config_file=/models/config.conf
+
 ```
 **Change the following:** </br>
 1. source - *Path to the folders downloaded from drive* for both void detector and label detector </br>
