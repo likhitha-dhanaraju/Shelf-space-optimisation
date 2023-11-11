@@ -1,17 +1,17 @@
 # Running the models on a server with docker
 
-### **Installing docker and tensorflow/serving**
+### **Installing docker and Tensorflow/serving**
 1. Install docker according to the instructions in the official docker website [Docker installation](https://docs.docker.com/install/) </br>
 2. Run the command to ***docker pull tensorflow/serving*** in the command line  </br>
 
 
-**Link to the trained modelsof Void Detector(DetectionModel), LabelDetector and void detector model for far images (FarVoid_Detector)** </br> 
+**Link to the trained models of Void Detector(DetectionModel), LabelDetector and void detector model for far images (FarVoid_Detector)** </br> 
 [Trained models](https://drive.google.com/open?id=1I0Ey3kGSOjUn3HBk7iC0BWi5t_XaedN4)
 
-Download the folders from the drive link and save it in your project folder
+Download the folders from the drive link and save it in your project folder.
 
 ### **To run as a server**
-Run the following command in the commandline to host as a server</br>
+Run the following command in the command line to host as a server</br>
 
 EXAMPLE:</br>
 ```
