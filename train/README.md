@@ -5,7 +5,7 @@ Change the contents of the contents of the *config* file accordingly.</br>
 Use a text editor to open the config file and make the following changes to the faster_rcnn_inception_v2_coco.config file.</br>
 Note: The paths must be entered with single forward slashes (NOT backslashes), or TensorFlow will give a file path error when trying to train the model! Also, the paths must be in double quotation marks ( ” ), not single quotation marks ( ‘ ). </br>
 
-***Line 10****: Set the num_classes value to the number of objects your classifier is classifying. In my case, as I am classifying voids and non-voids it would be num_classes: 2.
+***Line 10****: Set the num_classes value to the number of objects your classifier classifies. In my case, as I am classifying voids and non-voids it would be num_classes: 2.
 
 ***In Line 107***: Give the absolute path of model.ckpt file to the file_tuning_checkpoint parameter. model.ckpt file is present in the location object_detection/faster_rcnn_inception_v2_coco_2018_01_28. In my case,</br>
 fine_tune_checkpoint: “/home/likhitha/*project-folder*/training/model/faster_rcnn_inception_v2_coco_2018_01_28/model.ckpt”</br>
@@ -25,13 +25,13 @@ input_path: “/home/likhitha/*project-folder*/val.record”</br>
 label_map_path: “/home/likhitha/*project-folder*/training/labelmap.pbtxt”</br>
 
 
-***To train the model ***
+***To train the model***
 
 *Run the ***train.py*** progeam in the command line with the following arguments*</br>
 
 *python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/fater_rcnn_inception_v2_coco.config*  </br>
 
-***To save the inference graph *** 
+***To save the inference graph*** 
 
 *Run the ***export_inference_graph.py*** *program in the command line with the following arguments* </br>
 
